@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>challenge1</title>
+    </head>
+    <style>
+        * {box-sizing: border-box}
+        .mail {
+
+width: 40%;
+padding: 10px;
+margin: 5px 0 20px 0;
+display: inline-block;
+border: none;
+background : f1f1f1;
+}
+.mail{
+background-color: #ddd;
+outline: none;
+}
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+    .pass {
+
+width: 40%;
+padding: 10px;
+margin: 5px 0 20px 0;
+display: inline-block;
+border: none;
+background : f1f1f1;
+}
+.pass{
+background-color: #ddd;
+outline: none;
+}
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+/*style for buttons*/
+
+button {
+ background-color: #4CAF50;
+ color: white;
+ padding : 14px 18px;
+ margin: 8px 0;
+ border : none;
+ cursor : pointer;
+ width: 100%;
+ opacity: 0.9;
+
+}
+button:hover{
+    opacity: 1;
+}
+.cancelbutton {
+     padding: 14px 10px;
+     background-color: #f44336;
+ }
+
+ /*Float cancel and sign up buttons and add equal width*/
+
+.cancelbutton, .SignUpbutton{
+    float: left;
+    width: 10%
+}
+/*add padding to container elements*/
+.container {
+    padding: 16px;
+}
+
+/*Clear floats*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+/*change styles for cancel and sign up btns on phone*/
+@media screen and (max-width: 300px){
+    .cancelbutton, .SignUpbutton{
+        width: 100%;
+    }
+}
+    
+    </style>
+
+    <body>
+        <form action = "action page" style="border:1px solid #ccc">
+        <div class = "container">
+    <h2>Sign Up</h2>
+    <p>Please fill in this form</p>
+    <label for = "email"><br>Email</br></label>
+    <input type = "text" class = "mail" placeholder="Enter your Email address" name = "email" required>
+    <br>
+    <label for = "pwd"><br>Password</br></label>
+    <input type = "password" class="pass"placeholder = "Enter your password" name ="pwd" required>
+    <br>
+    <label for = "pwd rpt"><br>Repeat password</br></label>
+    <input type = "repeat password" class="pass" placeholder = "Repeat your password" name ="pwd rpt" required>
+     
+    <br>
+    <label>
+        <input type ="checkbox" checked = "checked" name ="Remember me"
+        style ="margin-bottom: 14px"><label>Remember me</label>
+    
+        <div class = "clearfix">
+    
+       <button type= "button" class = "cancelbutton"> Cancel</button>
+    <button type= "submit" class = "SignUpbutton">Sign Up</button>
+        </div>
+    </div>
+    </label>
+    </form>
+    </body>
+    </html>
